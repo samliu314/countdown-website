@@ -464,3 +464,24 @@ main {
   color: var(--dim);
   font-size: 0.78rem;
 }
+
+/* ── Mobile ── */
+@media (max-width: 640px) {
+  header { padding: 0.9rem 1.2rem; }
+  main { padding: 1.5rem 1rem 5rem; }
+
+  .event-card { flex-direction: column; min-height: unset; }
+  .event-card:hover { transform: none; }
+
+  .card-hero { width: 100%; height: 160px; }
+
+  .card-body { padding: 0.9rem 1rem; }
+
+  .cd-num { font-size: 1.3rem; }
+
+  .card-name { white-space: normal; }
+
+  .two-col { grid-template-columns: 1fr; }
+
+  .modal { padding: 1.2rem; }
+}

@@ -349,7 +349,8 @@ main {
   font-size: 0.48rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--dim);
+  color: rgba(180, 215, 245, 0.7);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
   margin-top: 0.2rem;
 }
 .past .cd-num { color: var(--dim); }

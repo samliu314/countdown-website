@@ -306,11 +306,12 @@ main {
   justify-content: space-between;
   gap: 0;
   font-size: 0.7rem;
-  color: var(--dim);
+  color: rgba(180, 215, 245, 0.82);
   letter-spacing: 0.03em;
   overflow: hidden;
   position: relative;
   z-index: 1;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
 }
 .card-when-date { white-space: nowrap; flex-shrink: 0; }
 .card-when-venue {
@@ -497,7 +498,9 @@ main {
 /* ── Mobile ── */
 @media (max-width: 640px) {
   header { padding: 0.9rem 1.2rem; }
-  main { padding: 1.5rem 1rem 5rem; }
+  main { padding: 1rem 0 5rem; }
+  .events-grid { border-radius: 0; }
+  .event-card { border-radius: 0; border-left-width: 3px; }
 
   .event-card { flex-direction: column; min-height: unset; }
   .event-card:hover { transform: none; }

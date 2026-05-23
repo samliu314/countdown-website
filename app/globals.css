@@ -95,7 +95,7 @@ select, .btn {
   padding: 0.38rem 0.7rem;
   border-radius: 2px;
   cursor: pointer;
-  transition: border-color 0.2s, color 0.2s;
+  transition: border-color 0.2s, color 0.2s, transform 0.1s, filter 0.1s;
   letter-spacing: 0.04em;
   appearance: none;
   -webkit-appearance: none;
@@ -115,6 +115,35 @@ select option { background: #04091a; }
 .btn-primary:hover { background: #33d8ff; border-color: #33d8ff; color: #04091a; }
 .btn-danger { background: rgba(255,60,60,.1); border-color: rgba(255,60,60,.45); color: #ff6666; }
 .btn-danger:hover { border-color: #ff4444; color: #ff4444; }
+.btn:active { transform: scale(0.96); filter: brightness(0.88); }
+
+/* ── Timezone picker ── */
+.tz-picker { position: relative; }
+.tz-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #030c1e;
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 2px 2px;
+  max-height: 180px;
+  overflow-y: auto;
+  z-index: 10;
+}
+.tz-option {
+  padding: 0.45rem 0.75rem;
+  font-size: 0.78rem;
+  font-family: 'Fira Code', monospace;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.tz-option:hover, .tz-option.active {
+  background: rgba(0,200,255,.1);
+  color: var(--accent);
+}
 
 .editor-badge {
   display: none;

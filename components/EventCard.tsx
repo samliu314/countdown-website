@@ -37,6 +37,7 @@ export default function EventCard({ event: ev, isEditor, onEdit, onDelete }: Pro
 
   const dateStr = ev.target.toLocaleDateString('en-US', {
     weekday: 'short', year: 'numeric', month: 'long', day: 'numeric',
+    timeZone: ev.timezone ?? 'UTC',
   });
 
   const heroStyle: React.CSSProperties = ev.image

@@ -33,6 +33,7 @@ const mockPayload = {
   emoji: '🎵',
   venue: 'Test Venue',
   fullBg: false,
+  timezone: 'UTC',
 };
 
 describe('toFirestore', () => {

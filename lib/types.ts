@@ -11,4 +11,5 @@ export interface Event {
   emoji: string;
   venue: string;
   fullBg: boolean;
+  timezone: string;
 }
